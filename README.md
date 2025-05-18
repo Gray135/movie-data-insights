@@ -1,7 +1,9 @@
 # 🎬 Movie Industry ROI Analysis
 Using SQL, Excel, and Power BI to Uncover What Drives Success in the Top ROI-Performing Films
 
-This project analyzes a curated sample of the **top 10 ROI-performing films** (from a dataset of 600+ titles) to uncover what traits drive outstanding financial success. Using SQL, Excel, and Power BI, the goal was to simulate how a customer insights or business analyst might approach a high-level executive request: “What do our most profitable films have in common, and how do we make more of them?”
+This project analyzes a curated sample of the **top 10 ROI-performing films** (from a dataset of 600+ titles) to uncover what traits drive outstanding financial success. Using SQL, Excel, and Power BI, the goal was to simulate how a customer insights or business analyst might approach a high-level executive request.
+
+The final Power BI dashboard spans five pages and includes advanced Power Query merges, visual interaction tuning, and slicer handling — all of which reflect the complexity of real-world business reporting. “What do our most profitable films have in common, and how do we make more of them?”
 
 This project does not attempt to generalize across all films. Instead, it focuses on **repeatable patterns** within the highest performers — to support better decision-making in areas such as content development, casting, budgeting, and production strategy.
 
@@ -113,6 +115,8 @@ It has been cleaned and structured for educational and analytical purposes in th
 ![Findings](images/Findings.png)  
 > Offers findings based on previous pages for potential investors to consider.
 
+6. ### Behind the Dashboard
+   
 [images](/images)
 
 ---
@@ -145,14 +149,18 @@ It has been cleaned and structured for educational and analytical purposes in th
 ## Real World Role Alignment
 This project simulates the type of work done by analysts in:
 
-- **CX / VoC roles** – extracting patterns from top customer experiences or successful campaigns  
-- **Business Analysts** – identifying repeatable success factors to improve investment outcomes  
-- **Media / Content Analysts** – advising on production strategy using data-backed insight  
+- **CX / VoC roles** –Identifying success patterns among top-performing “experiences”
+- **Business Analysts** –Supporting investment decisions with data evidence
+- **Media / Content Analysts** –Recommending strategies based on ROI and audience data
 
-It demonstrates:
+You'll see skills in:
 - Data preparation, exploration, and querying  
-- Communicating nuanced, scoped insights  
-- Designing dashboards for decision support, not just visual appeal
+- Communicating scoped insights clearly
+- Designing dashboards to support decision making
+- SQL for uncovering high ROI traits
+- Power BI for multi page reporting and visual interaction
+- Power Query for merging and modeling clean relationships
+- DAX for ROI calculations and slicer based filtering logic
 ---
 
 ##  Project Progress and Next Steps
