@@ -116,7 +116,9 @@ It has been cleaned and structured for educational and analytical purposes in th
 > Offers findings based on previous pages for potential investors to consider.
 
 6. ### Behind the Dashboard
-   
+![Behind the Dashboard](images/Behind_the_Dashboard.png) 
+> Highlights decision, learning, and problem solving behind the dashboard.
+
 [images](/images)
 
 ---
