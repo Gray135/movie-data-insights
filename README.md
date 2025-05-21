@@ -117,7 +117,7 @@ It has been cleaned and structured for educational and analytical purposes in th
 
 6. ### Behind the Dashboard
 ![Behind the Dashboard](images/Behind_the_Dashboard.png) 
-> Highlights decision, learning, and problem solving behind the dashboard.
+>I built this while learning Power BI, Power Query, and DAX from scratch. The hardest part was just staying with it. I’m still figuring it out, but this project taught me more than any tutorial ever could.
 
 [images](/images)
 
