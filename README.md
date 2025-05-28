@@ -104,7 +104,7 @@ It has been cleaned and structured for educational and analytical purposes in th
 > Detailed analysis of the ROI of top actors, directors, movies, and production companies.
 
 3. ### Trends Over Time  
-![Trends Over Time](images/Trends_Over_Time.png)  
+![Trends Over Time](images/Trends_Over_Time_2.png)  
 > Displays movie revenue patterns across release years.
 
 4. ### Genre Analysis  
