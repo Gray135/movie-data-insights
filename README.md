@@ -3,34 +3,59 @@ Using SQL, Excel, and Power BI to Uncover What Drives Success in the Top ROI-Per
 
 This project analyzes a curated sample of the **top 10 ROI-performing films** (from a dataset of 600+ titles) to uncover what traits drive outstanding financial success. Using SQL, Excel, and Power BI, the goal was to simulate how a customer insights or business analyst might approach a high-level executive request.
 
-The final Power BI dashboard spans five pages and includes advanced Power Query merges, visual interaction tuning, and slicer handling — all of which reflect the complexity of real-world business reporting. “What do our most profitable films have in common, and how do we make more of them?”
+The goal is to uncover repeatable traits in high-performing films—genre, director, budget, runtime, production company—to guide smarter investment decisions.
 
-This project does not attempt to generalize across all films. Instead, it focuses on **repeatable patterns** within the highest performers — to support better decision-making in areas such as content development, casting, budgeting, and production strategy.
+The final Power BI dashboard spans multiple pages and includes:
+- ROI performance breakdowns
+- Genre and studio-level visual analysis
+- Slicer-enabled interactivity
+- Summary recommendations based on data
 
 ---
 
 ## Table of Contents
 
-- [Folder Structure](#folder-structure)
+- [Dashboard Preview](#dashboard-preview)
 - [Business Objective](#business-objective)
 - [Key Insights](#key-insights)
 - [Data Source](#data-source)
 - [Data Preparation Summary](#data-preparation-summary)
-- [Dashboard Preview](#dashboard-preview)
 - [SQL Questions and Solutions](#sql-questions-and-solutions)
 - [Real World Role Alignment](#real-world-role-alignment)
+- [Folder Structure](#folder-structure)
 - [Project Progress and Next Steps](#project-progress-and-next-steps)
 - [Contact](#contact)
 - [Disclaimer](#disclaimer)
 
 ---
 
-## Folder Structure
+## Dashboard Preview
 
-- `sql-queries/` – Contains all SQL queries used to analyze the data
-- `images/` – Contains all screenshots used in the README   
-- `dashboard.pbix` – Power BI file for interactive exploration  
-- `README.md` – Project overview, business questions, and query links
+1. ### Overview  
+![Overview](images/Overview.png)  
+> High-level summary of movie ROI.
+
+2. ### Detailed ROI Analysis  
+![Detailed ROI Analysis](images/Detailed_ROI_Analysis.png)  
+> Detailed analysis of the ROI of top actors, directors, movies, and production companies.
+
+3. ### Trends Over Time  
+![Trends Over Time](images/Trends_Over_Time_2.png)  
+> Displays movie revenue patterns across release years.
+
+4. ### Genre Analysis  
+![Genre Analysis](images/Genre_Analysis.png)  
+> Compare top-performing films and their genres to average revenues.
+
+5. ### Findings  
+![Findings](images/Findings.png)  
+> Offers findings based on previous pages for potential investors to consider.
+
+6. ### Behind the Dashboard
+![Behind the Dashboard](images/Behind_the_Dashboard.png) 
+>I built this while learning Power BI, Power Query, and DAX from scratch. The hardest part was just staying with it. I’m still figuring it out, but this project taught me more than any tutorial ever could.
+
+[images](/images)
 
 ---
 
@@ -93,36 +118,6 @@ It has been cleaned and structured for educational and analytical purposes in th
   
 ---
 
-## Dashboard Preview
-
-1. ### Overview  
-![Overview](images/Overview.png)  
-> High-level summary of movie ROI.
-
-2. ### Detailed ROI Analysis  
-![Detailed ROI Analysis](images/Detailed_ROI_Analysis.png)  
-> Detailed analysis of the ROI of top actors, directors, movies, and production companies.
-
-3. ### Trends Over Time  
-![Trends Over Time](images/Trends_Over_Time_2.png)  
-> Displays movie revenue patterns across release years.
-
-4. ### Genre Analysis  
-![Genre Analysis](images/Genre_Analysis.png)  
-> Compare top-performing films and their genres to average revenues.
-
-5. ### Findings  
-![Findings](images/Findings.png)  
-> Offers findings based on previous pages for potential investors to consider.
-
-6. ### Behind the Dashboard
-![Behind the Dashboard](images/Behind_the_Dashboard.png) 
->I built this while learning Power BI, Power Query, and DAX from scratch. The hardest part was just staying with it. I’m still figuring it out, but this project taught me more than any tutorial ever could.
-
-[images](/images)
-
----
-
 ## SQL Questions and Solutions
 
 1. [Top 10 Performing Movies](sql-queries/top_movies.sql)  
@@ -163,6 +158,14 @@ You'll see skills in:
 - Power BI for multi page reporting and visual interaction
 - Power Query for merging and modeling clean relationships
 - DAX for ROI calculations and slicer based filtering logic
+---
+## Folder Structure
+
+- `sql-queries/` – Contains all SQL queries used to analyze the data
+- `images/` – Contains all screenshots used in the README   
+- `dashboard.pbix` – Power BI file for interactive exploration  
+- `README.md` – Project overview, business questions, and query links
+
 ---
 
 ##  Project Progress and Next Steps
