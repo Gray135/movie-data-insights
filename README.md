@@ -1,4 +1,4 @@
-# 🎬 Movie Industry ROI Analysis
+# Movie Industry ROI Analysis
 Using SQL, Excel, and Power BI to Uncover What Drives Success in the Top ROI-Performing Films
 
 This project analyzes a curated sample of the **top 10 ROI-performing films** (from a dataset of 600+ titles) to uncover what traits drive outstanding financial success. Using SQL, Excel, and Power BI, the goal was to simulate how a customer insights or business analyst might approach a high-level executive request.
