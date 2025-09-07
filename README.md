@@ -1,8 +1,8 @@
 # How to Read this Repo
 - **Start here:** Scroll to the [Dashboard Preview](#dashboard-preview) to see the Power BI visuals.  
-- **SQL logic:** All queries are in the `SQL Queries` folder.  
-- **Dashboard file:** Open `movie_roi_dashboard.pbix` in Power BI Desktop for full interactivity.  
-- **Quick skim:** The README walks through objectives, queries, and insights step by step.
+- **SQL logic:** All queries are in the [sql-queries/](sql-queries) folder.  
+- **Dashboard file:** [movie_roi_dashboard.pbix](movie_roi_dashboard.pbix) open in Power BI Desktop for full interactivity.  
+- **Quick skim:** - [README.md](README.md) – walks through objectives, queries, and insights step by step.  
   
 # Movie Industry ROI Analysis
 
@@ -38,6 +38,19 @@ The final Power BI dashboard spans multiple pages and includes:
 
 ## Dashboard Preview
 
+### Key Metrics
+| Metric                  | Value |
+|--------------------------|-------|
+| ROI Formula              | (Revenue – Budget) / Budget |
+| # of Titles Analyzed     | 600+ films (cleaned dataset) |
+| Time Window              | 1997–2016 releases |
+| Top ROI Genre            | Horror (3.12 ROI) |
+| Lowest ROI Genre         | Crime (1.42 ROI) |
+| Most Profitable Studio   | Ingenious Film Partners (10.8 ROI) |
+| Avg ROI Across All Films | ~7.36 |
+| Highest ROI Film         | Minions (14.6 ROI) |
+| Avg Runtime (Top 10)     | ~141 minutes |
+
 1. ### Overview  
 ![Overview](images/Overview.png)  
 > High-level summary of movie ROI.
@@ -60,7 +73,7 @@ The final Power BI dashboard spans multiple pages and includes:
 
 6. ### Behind the Dashboard
 ![Behind the Dashboard](images/Behind_the_Dashboard.png) 
->I built this while learning Power BI, Power Query, and DAX from scratch. The hardest part was just staying with it. I’m still figuring it out, but this project taught me more than any tutorial ever could.
+> Built while self-learning Power BI, Power Query, and DAX. This project reflects applied learning beyond tutorials and simulates a real-world analytics request.
 
 [images](/images)
 
@@ -168,10 +181,10 @@ You'll see skills in:
 ---
 ## Folder Structure
 
-- `sql-queries/` – Contains all SQL queries used to analyze the data
-- `images/` – Contains all screenshots used in the README   
-- `dashboard.pbix` – Power BI file for interactive exploration  
-- `README.md` – Project overview, business questions, and query links
+- [sql-queries/](sql-queries) – Contains all SQL queries used to analyze the data
+- [images/](images) – Contains all screenshots used in the README   
+- [movie_roi_dashboard.pbix](dashboard/movie_roi_dashboard.pbix) – Power BI file for interactive exploration  
+- [README.md](README.md) – Project overview, business questions, and query links
 
 ---
 
