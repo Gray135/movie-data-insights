@@ -1,4 +1,11 @@
+# How to Read this Repo
+- **Start here:** Scroll to the [Dashboard Preview](#dashboard-preview) to see the Power BI visuals.  
+- **SQL logic:** All queries are in the `SQL Queries` folder.  
+- **Dashboard file:** Open `movie_roi_dashboard.pbix` in Power BI Desktop for full interactivity.  
+- **Quick skim:** The README walks through objectives, queries, and insights step by step.
+- 
 # Movie Industry ROI Analysis
+
 Using SQL, Excel, and Power BI to Uncover What Drives Success in the Top ROI-Performing Films
 
 This project analyzes a curated sample of the **top 10 ROI-performing films** (from a dataset of 600+ titles) to uncover what traits drive outstanding financial success. Using SQL, Excel, and Power BI, the goal was to simulate how a customer insights or business analyst might approach a high-level executive request.
