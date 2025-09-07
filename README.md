@@ -3,7 +3,7 @@
 - **SQL logic:** All queries are in the `SQL Queries` folder.  
 - **Dashboard file:** Open `movie_roi_dashboard.pbix` in Power BI Desktop for full interactivity.  
 - **Quick skim:** The README walks through objectives, queries, and insights step by step.
-- 
+  
 # Movie Industry ROI Analysis
 
 Using SQL, Excel, and Power BI to Uncover What Drives Success in the Top ROI-Performing Films
