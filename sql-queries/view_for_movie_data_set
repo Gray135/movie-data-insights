@@ -1,1 +1,11 @@
 
+
+CREATE OR REPLACE VIEW top_roi AS
+SELECT
+    m.title, m.genre, m.release_year,
+    f.budget::numeric AS budget,
+    f.revenue::numeric AS revenue,
+    (f.revenue::numeric - NULLIF(f.budget::numeric,0)) / NULLIF(f.budget::numeric,0) AS roi
+FROM movie m
+JOIN finance f ON m.finance_id = f.finance_id
+WHERE f.budget::numeric > 0;
