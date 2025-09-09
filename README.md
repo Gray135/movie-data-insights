@@ -4,19 +4,29 @@
 - **Dashboard file:** [movie_roi_dashboard.pbix](movie_roi_dashboard.pbix) open in Power BI Desktop for full interactivity.  
 - **Quick skim:** - [README.md](README.md) – walks through objectives, queries, and insights step by step.  
   
-# Movie Industry ROI Analysis
+# 🎬 Movie Industry ROI Analysis
 
-Using SQL, Excel, and Power BI to Uncover What Drives Success in the Top ROI-Performing Films
+## Using SQL, Excel, and Power BI to Uncover What Drives Film ROI
 
-This project analyzes a curated sample of the **top 10 ROI-performing films** (from a dataset of 600+ titles) to uncover what traits drive outstanding financial success. Using SQL, Excel, and Power BI, the goal was to simulate how a customer insights or business analyst might approach a high-level executive request.
+This project analyzes a curated sample of the **top 10 ROI-performing films** drawn from a cleaned dataset of **600+ titles (1997–2016)**. The aim is to simulate how a customer-insights / business analyst would respond to an executive ask: *“What traits consistently show up in our biggest wins?”*
 
-The goal is to uncover repeatable traits in high-performing films—genre, director, budget, runtime, production company—to guide smarter investment decisions.
+**Objective:** identify repeatable signals—**genre, director, budget, runtime, production company**—that correlate with outsized ROI and can inform smarter green-light decisions.
 
-The final Power BI dashboard spans multiple pages and includes:
-- ROI performance breakdowns
-- Genre and studio-level visual analysis
-- Slicer-enabled interactivity
-- Summary recommendations based on data
+**Tools & approach**
+- **SQL:** data cleaning, joins, views to shape analysis tables  
+- **Excel:** validation checks, calculated fields, quick sanity tests  
+- **Power BI:** data model, DAX measures, interactive visuals & slicers
+
+**Dashboard pages**
+- **Overview:** ROI performance at a glance (films, directors, actors, studios)
+- **Detailed ROI:** top performers with drill-downs
+- **Trends Over Time:** ROI & revenue patterns by release year and runtime
+- **Genre Analysis:** category-level ROI comparisons
+- **Findings:** concise recommendations supported by the data
+- **Behind the Dashboard:** build notes and assumptions
+
+**Outcome (high level):** low-budget categories—especially **horror/documentary**—frequently outperform on ROI; select studios and directors recur among top performers, suggesting targeted bets can amplify returns.
+
 
 ---
 
@@ -24,10 +34,10 @@ The final Power BI dashboard spans multiple pages and includes:
 
 - [Dashboard Preview](#dashboard-preview)
 - [Business Objective](#business-objective)
-- [Key Insights](#key-insights)
+- [Key Insights From the Analysis](#key-insights-from-the-analysis)
 - [Data Source](#data-source)
-- [Data Preparation Summary](#data-preparation-summary)
-- [SQL Questions and Solutions](#sql-questions-and-solutions)
+- [Data Preparation and Cleaning](#data-preparation-and-cleaning)
+- [SQL Queries](#sql-queries)
 - [Real World Role Alignment](#real-world-role-alignment)
 - [Folder Structure](#folder-structure)
 - [Project Progress and Next Steps](#project-progress-and-next-steps)
@@ -38,18 +48,24 @@ The final Power BI dashboard spans multiple pages and includes:
 
 ## Dashboard Preview
 
-### Key Metrics
-| Metric                  | Value |
-|--------------------------|-------|
-| ROI Formula              | (Revenue – Budget) / Budget |
-| # of Titles Analyzed     | 600+ films (cleaned dataset) |
-| Time Window              | 1997–2016 releases |
-| Top ROI Genre            | Horror (3.12 ROI) |
-| Lowest ROI Genre         | Crime (1.42 ROI) |
-| Most Profitable Studio   | Ingenious Film Partners (10.8 ROI) |
-| Avg ROI Across All Films | ~7.36 |
-| Highest ROI Film         | Minions (14.6 ROI) |
-| Avg Runtime (Top 10)     | ~141 minutes |
+This dashboard analyzes ROI trends across 600+ films released between 1997–2016. Results highlight how low-budget horror and documentary films consistently outperform big-budget productions, with Blumhouse Productions, *Paranormal Activity*, and director Oren Peli dominating ROI performance. The findings reinforce how lean production strategies often deliver the strongest financial returns.
+
+### 🔑 Key Metrics
+
+| **Metric**                   | **Value**                                   |
+|-----------------------------|---------------------------------------------|
+| **ROI Formula**             | (Revenue – Budget) / Budget                 |
+| **# of Titles Analyzed**    | ~600 films (cleaned dataset)                |
+| **Time Window**             | 1997–2016 releases                          |
+| **Top ROI Genre**           | Horror (~3.1 ROI)                           |
+| **Lowest ROI Genre**        | Crime (~1.4 ROI)                            |
+| **Top Production Company**  | Blumhouse Productions (3.2K+ ROI)           |
+| **Top Director**            | Oren Peli (12.9K ROI – *Paranormal Activity*) |
+| **Top Actor (Avg ROI)**     | Michael C. (4.1K ROI – *Paranormal Activity*) |
+| **Most Profitable Film**    | *Paranormal Activity* (12.9K ROI)           |
+| **Avg ROI (All Films)**     | ~7.4                                        |
+| **Avg Runtime (Top 10)**    | ~100–110 minutes                            |
+
 
 1. ### Movie ROI Dashboard
 ![Movie ROI Dashboard](images/Movie_ROI_Dashboard.png)  
@@ -79,8 +95,8 @@ The final Power BI dashboard spans multiple pages and includes:
 ![Genre Benchmarks: Budget, Revenue & ROI](images/Genre_Analysis.png) 
 > Reveals ROI distribution by genre, with horror and documentary outperforming big-budget action and drama.
 
-8. ### Maximizing Film ROI: What Budget, Genre, & Directors Reveal
-![Maximizing Film ROI: What Budget, Genre, & Directors Reveal](images/Maximizing_Film_ROI.png) 
+8. ### What Revenue vs ROI Analysis Reveals About Film Success
+![What Revenue vs ROI Analysis Reveals About Film Success](images/What_Revenue_vs_ROI_Analysis_Reveals_About_Film_Success.png) 
 > Summarizes strategies used by top-performing films and studios to maximize ROI despite budget constraints.
 
 9. ### Behind the Dashboard
@@ -95,41 +111,37 @@ The final Power BI dashboard spans multiple pages and includes:
 
 ## Business Objective
 
-Studios routinely invest millions into film production with no guarantee of return. This project focuses on a **targeted subset of the top 10 ROI performers** from a larger dataset of over 600 films to explore:
+Studios invest millions into film production with no guarantee of return. This project examines a targeted subset of the **top 10 ROI performers** from a larger dataset of 600+ films (1997–2016) to answer key business questions:
 
 - What traits define the most financially successful films?
-- Are there repeatable success patterns by genre, director, runtime, or studio?
-- Can low-budget films reliably outperform high-budget ones?
-- Do certain studios or production approaches consistently yield better results?
+- Are there repeatable patterns by **genre, director, runtime, or studio**?
+- Do **low-budget films** reliably outperform high-budget ones?
+- Which studios or production approaches consistently deliver outsized returns?
 
-This project is framed as if an executive asked:  
-> “We’ve had a few huge wins — how do we find more like those?”
+The analysis is framed as if an executive asked:  
+> *“We’ve had a few huge wins — how do we find more like those?”*
 
-It’s built to reflect how an analyst would clean and analyze data, surface actionable findings, and communicate them visually.
+The project reflects how an analyst would approach the request:  
+- **Clean and prepare** raw data (SQL, Excel)  
+- **Analyze and surface findings** (SQL queries, descriptive analysis)  
+- **Communicate visually** with interactive dashboards (Power BI)  
+
+**Outcome:** a multi-page dashboard highlighting repeatable traits of high-ROI films, built to simulate a real-world executive briefing.
 
 ---
-## Key Insights
-The analysis focuses on the **top 10 ROI-performing films** to uncover traits shared by high-reward projects:
+## Key Insights from the Analysis
 
-- **Proven directors drive performance**  
-  James Cameron appears more than once in the top 10, suggesting that investing in repeat, high-performing directors can lead to outsized returns.
+### Top Grossing Films (Revenue Leaders)
+- **Proven directors dominate revenue:** James Cameron, Joss Whedon, and the Russo brothers appear multiple times among the all-time box office leaders.  
+- **Franchises and recurring IP drive scale:** Marvel and Disney consistently leverage shared universes, sequels, and bankable actors to maximize global box office returns.  
+- **Animation delivers high average revenue:** Pixar and Disney titles show strong monetization potential, even if they don’t top ROI charts.  
 
-- **High ROI comes from niche genres**  
-  Horror and documentary-style films (*Paranormal Activity*, *Blair Witch Project*) delivered massive ROI despite modest budgets, highlighting genre leverage as a factor.
-
-- **Universal and Marvel dominate returns**  
-  Universal appears frequently in high performers. Marvel’s strategy of recurring IP and bankable lead actors (e.g., RDJ) appears repeatedly in top ROI outcomes.
-
-- **There’s a runtime sweet spot**  
-  Top films averaged ~141 minutes. This suggests a performance window where content is rich without overstaying its welcome.
-
-- **Budget is not a barrier**  
-  Multiple low-budget films outperformed big-budget projects on ROI — reminding studios that efficiency and content quality can drive value without scale.
-
-- **Animated films yield strong average revenue per title**  
-  Animation delivered the highest average revenue per film, hinting at strong monetization potential — even if not top-ranked by ROI.
-
-> These insights reflect trends within the top 10 performers only. They are not intended as generalizations across the full dataset.
+### Top ROI Films (Efficiency Leaders)
+- **Micro-budgets deliver massive ROI:** *Paranormal Activity* achieved ~12,900% ROI on a ~$20K budget, far outpacing blockbuster tentpoles.  
+- **Horror and documentary dominate efficiency:** Low-cost genres generated the highest ROI, while crime films consistently underperformed.  
+- **Blumhouse shows a repeatable ROI model:** The studio’s lean production approach demonstrates how ROI can be engineered.  
+- **Star power not required:** Unknown actors (e.g., Michael C. in *Paranormal Activity*) led top ROI films, showing concept and execution matter more than celebrity.  
+- **Runtime sweet spot ~100–110 minutes:** Top ROI titles cluster around this range, suggesting concise runtimes optimize cost and engagement.  
 
 ---
 
@@ -143,55 +155,57 @@ It has been cleaned and structured for educational and analytical purposes in th
 
 ---
 
-##  Data Preparation Summary
+### Data Preparation and Cleaning
 
-- Filled in missing budget and revenue values manually using IMDb and Box Office Mojo 
-- Standardized date formats for release year
-- Removed entries with 0 revenue and invalid genres
-- Normalized genre and production company fields (e.g., cleaned inconsistent naming)
+- **Completed missing financials:** Filled in missing budget and revenue values using external sources (IMDb, Box Office Mojo) to ensure accurate ROI calculations.  
+- **Standardized formats:** Converted release dates into a consistent year format for trend analysis.  
+- **Filtered invalid records:** Removed films with zero revenue and excluded entries with invalid or missing genre labels.  
+- **Normalized categorical fields:** Cleaned and standardized genre and production company names to resolve duplicates and inconsistencies (e.g., “Universal Pictures” vs. “Universal”).  
   
 ---
 
-## SQL Questions and Solutions
+### SQL Queries
 
 1. [Top 10 Performing Movies](sql-queries/top_movies.sql)  
-   Identify the 10 movies with the highest ROI, along with their key contributors.
+   Returns the 10 highest-ROI films and their key contributors (director, studio, lead actor), forming the basis for the *Top ROI Films* analysis.  
 
 2. [Budget to Revenue Ratio](sql-queries/budget_ratio.sql)  
-   Calculate ROI based on budget-to-revenue for the full dataset.
-   
+   Calculates ROI for all films in the dataset using the formula `(Revenue – Budget) / Budget`, enabling dataset-wide comparisons.  
+
 3. [Genre Summary](sql-queries/genre_summary.sql)  
-   Analyze total and average revenue/budget by genre.
+   Aggregates total and average revenue, budget, and ROI by genre to highlight which categories consistently outperform or underperform.  
 
 4. [Compare to Genre Averages](sql-queries/compare_to_avg.sql)  
-   Compare each movie’s performance against genre-level averages.
+   Benchmarks each film’s performance against its genre’s average ROI, surfacing outliers that dramatically over- or under-deliver.  
 
 5. [Top Productions by Company](sql-queries/production_companies.sql)  
-   Identify studios repeatedly linked to successful movies.
+   Identifies studios and production companies most frequently linked to high-ROI titles (e.g., Blumhouse), demonstrating repeatable business models.  
 
 6. [Top 10 Movies vs Average Metrics](sql-queries/avg_vs_actual.sql)  
-   Analyze how top-performing movies differ in runtime, budget, and other metrics.
+   Compares top-performing films to dataset averages in runtime, budget, and revenue, uncovering differences that explain ROI outperformance.  
 
 7. [Release Year + Runtime Overview](sql-queries/release_year.sql)  
-   Explore how release year and runtime factor into the success of a movie.
+   Analyzes how release year and runtime correlate with ROI, supporting insights into time-period trends and optimal film length.  
+
+8. [Updated View for Movie Dataset](sql-queries/Updated_view_for_Movie_Data_Set.sql)  
+   Consolidates cleaned budget, revenue, ROI, runtime, genre, and production company fields into a single view for use in Power BI dashboards.  
 
 ---
 
-## Real World Role Alignment
-This project simulates the type of work done by analysts in:
+## Real-World Role Alignment
 
-- **CX / VoC roles** –Identifying success patterns among top-performing “experiences”
-- **Business Analysts** –Supporting investment decisions with data evidence
-- **Media / Content Analysts** –Recommending strategies based on ROI and audience data
+This project simulates the type of analysis commonly performed in roles such as:
 
-You'll see skills in:
-- Data preparation, exploration, and querying  
-- Communicating scoped insights clearly
-- Designing dashboards to support decision making
-- SQL for uncovering high ROI traits
-- Power BI for multi page reporting and visual interaction
-- Power Query for merging and modeling clean relationships
-- DAX for ROI calculations and slicer based filtering logic
+- **Customer Experience / Voice of Customer (CX / VoC) Analysts** – spotting success patterns in customer or content outcomes and translating them into actionable strategies.  
+- **Business Analysts** – supporting investment decisions with evidence from structured data (e.g., budget, ROI, performance trends).  
+- **Media / Content Analysts** – analyzing creative, genre, and production data to recommend high-yield strategies for future projects.  
+
+**Key skills demonstrated in this project:**
+- **Data preparation & cleaning** – filled gaps, standardized formats, normalized categories for analysis-ready data.  
+- **Exploratory SQL analysis** – uncovered top ROI performers, genre trends, and production patterns using targeted queries and a consolidated view.  
+- **Insight communication** – transformed raw results into clear, scoped takeaways aligned to executive-style questions.  
+- **Dashboard design (Power BI)** – built multi-page, interactive reporting with slicers, genre filters, and drill-downs.  
+- **Data modeling (Power Query & DAX)** – merged multiple tables, defined ROI measures, and applied filtering logic for consistent metrics.  
 ---
 ## Folder Structure
 
@@ -202,13 +216,17 @@ You'll see skills in:
 
 ---
 
-##  Project Progress and Next Steps
+## Project Progress and Next Steps
 
--  Completed SQL analysis with 7 structured queries  
--  Built a Power BI dashboard to visualize trends by genre, director, and studio  
--  Publish a LinkedIn post highlighting key insights and linking to this GitHub project  
--  Learn how to add calculated fields in DAX to enhance ROI and filtering  
--  Optional: Expand dataset to include 2025 movies and streaming/international data for further analysis
+**Completed to date:**
+- Delivered SQL analysis through 7 structured queries plus a consolidated view for reporting.  
+- Built a multi-page Power BI dashboard visualizing ROI patterns by genre, director, studio, and runtime.  
+- Documented data preparation and cleaning steps to ensure analysis reliability.  
+
+**Planned improvements:**
+- Publish a LinkedIn post highlighting key findings and linking to this GitHub project to showcase professional impact.  
+- Add calculated fields and measures in DAX to enhance ROI tracking, filtering logic, and scenario analysis.  
+- Expand dataset to include films released through 2025 (and potentially streaming/international box office) for richer comparisons.  
 
 ---
 
@@ -216,7 +234,8 @@ You'll see skills in:
 
 **Aaron Zeug**  
 Customer Experience & Reporting Specialist  
-Transitioning into Data Analytics with a focus on insight-driven storytelling  
+Building a career in Data Analytics with a focus on clear, insight-driven storytelling.  
+8+ years in CX and quality, now applying SQL, Excel, and Power BI to real-world analysis projects.  
 [GitHub Profile](https://github.com/Gray135) • [LinkedIn](https://linkedin.com/in/aaronzeug)
 
 ---
