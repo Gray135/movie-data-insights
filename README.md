@@ -51,29 +51,43 @@ The final Power BI dashboard spans multiple pages and includes:
 | Highest ROI Film         | Minions (14.6 ROI) |
 | Avg Runtime (Top 10)     | ~141 minutes |
 
-1. ### Overview  
-![Overview](images/Overview.png)  
-> High-level summary of movie ROI.
+1. ### Movie ROI Dashboard
+![Movie ROI Dashboard](images/Movie_ROI_Dashboard.png)  
+> High-level dashboard summarizing ROI across films, directors, actors, and production companies.
 
-2. ### Detailed ROI Analysis  
-![Detailed ROI Analysis](images/Detailed_ROI_Analysis.png)  
-> Detailed analysis of the ROI of top actors, directors, movies, and production companies.
+2. ### Top 10 Films: Balancing Revenue, Budget & ROI  
+![Top 10 Films: Balancing Revenue, Budget & ROI](images/Top_10_Films.png)  
+> Compares the ten most profitable films by ROI, emphasizing patterns across production studios and genres.
 
-3. ### Trends Over Time  
-![Trends Over Time](images/Trends_Over_Time_2.png)  
-> Displays movie revenue patterns across release years.
+3. ### Highest ROI Films: Studios, Directors & Actors
+![Highest ROI FilmsL Studios, Directors & Actors](images/Highest_ROI_Films.png)  
+> Lists top individual films by ROI, showing how modest budgets can drive extraordinary returns.
 
-4. ### Genre Analysis  
-![Genre Analysis](images/Genre_Analysis.png)  
-> Compare top-performing films and their genres to average revenues.
+4. ### Top Performers by Average ROI
+![Top Performers by Average ROI](images/Top_Performers_by_Average_ROI.png)  
+> Highlights low-budget horror’s dominance, with Blumhouse, Oren Peli, and Paranormal Activity leading ROI.
 
-5. ### Findings  
-![Findings](images/Findings.png)  
-> Offers findings based on previous pages for potential investors to consider.
+5. ### Revenue & ROI by Release Year & Runtime
+![Revenue & ROI by Release Year & Runtime](images/Revenue_and_ROI_by_Release_Year_and_Runtime.png)  
+> Explores yearly ROI patterns and correlations with average film lengths.
 
-6. ### Behind the Dashboard
+6. ### Revenue & ROI Trends Over Time & Runtime
+![Revenue & ROI Trends Over Time & Runtime](images/Revenue_and_ROI_Trends_Over_Time_and_Runtime.png) 
+> Shows how film runtimes and release years impact ROI trends, highlighting shifts over decades.
+
+7. ### Genre Benchmarks: Budget, Revenue & ROI
+![Genre Benchmarks: Budget, Revenue & ROI](images/Genre_Analysis.png) 
+> Reveals ROI distribution by genre, with horror and documentary outperforming big-budget action and drama.
+
+8. ### Maximizing Film ROI: What Budget, Genre, & Directors Reveal
+![Maximizing Film ROI: What Budget, Genre, & Directors Reveal](images/Maximizing_Film_ROI.png) 
+> Summarizes strategies used by top-performing films and studios to maximize ROI despite budget constraints.
+
+9. ### Behind the Dashboard
 ![Behind the Dashboard](images/Behind_the_Dashboard.png) 
-> Built while self-learning Power BI, Power Query, and DAX. This project reflects applied learning beyond tutorials and simulates a real-world analytics request.
+> Documents project build: Power BI, Power Query, SQL, and DAX applied to simulate a real-world analytics request.
+
+
 
 [images](/images)
 
