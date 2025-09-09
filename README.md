@@ -1,7 +1,7 @@
 # How to Read this Repo
 - **Start here:** Scroll to the [Dashboard Preview](#dashboard-preview) to see the Power BI visuals.  
 - **SQL logic:** All queries are in the [sql-queries/](sql-queries) folder.  
-- **Dashboard file:** [movie_roi_dashboard.pbix](movie_roi_dashboard.pbix) open in Power BI Desktop for full interactivity.  
+- **Dashboard file:** [movie_roi_dashboard_update.pbix](movie_roi_dashboard_update.pbix) open in Power BI Desktop for full interactivity.  
 - **Quick skim:** - [README.md](README.md) – walks through objectives, queries, and insights step by step.  
   
 # 🎬 Movie Industry ROI Analysis
@@ -211,7 +211,7 @@ This project simulates the type of analysis commonly performed in roles such as:
 
 - [sql-queries/](sql-queries) – Contains all SQL queries used to analyze the data
 - [images/](images) – Contains all screenshots used in the README   
-- [movie_roi_dashboard.pbix](dashboard/movie_roi_dashboard.pbix) – Power BI file for interactive exploration  
+- [movie_roi_dashboard_update.pbix](dashboard/movie_roi_dashboard_update.pbix) – Power BI file for interactive exploration  
 - [README.md](README.md) – Project overview, business questions, and query links
 
 ---
