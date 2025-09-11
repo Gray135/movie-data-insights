@@ -35,12 +35,15 @@ This project analyzes a curated sample of the **top 10 ROI-performing films** dr
 - [Dashboard Preview](#dashboard-preview)
 - [Business Objective](#business-objective)
 - [Key Insights From the Analysis](#key-insights-from-the-analysis)
+- [Recommendations](#recommendations)
 - [Data Source](#data-source)
 - [Data Preparation and Cleaning](#data-preparation-and-cleaning)
 - [SQL Queries](#sql-queries)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Real World Role Alignment](#real-world-role-alignment)
 - [Folder Structure](#folder-structure)
 - [Project Progress and Next Steps](#project-progress-and-next-steps)
+- [Reflection](#reflection)
 - [Contact](#contact)
 - [Disclaimer](#disclaimer)
 
@@ -206,8 +209,24 @@ It has been cleaned and structured for educational and analytical purposes in th
 
 ---
 ## Exploratory Data Analysis (EDA)
-These quick visuals show the overall dataset before drilling into Top 10 ROI films.
 
+Before building the dashboard, I ran exploratory checks to understand patterns in the data. These visuals highlight how ROI is distributed, how it varies by genre, and how budget size relates to financial efficiency.  
+
+### ROI Distribution
+![ROI Histogram](./images/eda/roi_hist.png)  
+*The majority of films generate modest ROI (0–5x budget). Only a few reach extreme levels above 100x, showing how rare runaway hits are.*  
+
+### ROI by Genre
+![ROI by Genre](./images/eda/roi_genre.png)  
+*Horror and Documentary films show higher ROI potential, while genres such as Crime underperform. Outliers were capped to keep the chart readable.*  
+
+### Budget vs ROI
+![Budget vs ROI Scatter](./images/eda/budget_roi_scatter.png)  
+*Smaller budgets cluster at higher ROI, while large-budget films are spread across the full range — confirming that blockbuster spending does not guarantee profitability.*  
+
+These exploratory findings informed the dashboard design and final recommendations.
+
+---
 ## Real-World Role Alignment
 
 This project simulates the type of analysis commonly performed in roles such as:
