@@ -144,6 +144,12 @@ The project reflects how an analyst would approach the request:
 - **Runtime sweet spot ~100–110 minutes:** Top ROI titles cluster around this range, suggesting concise runtimes optimize cost and engagement.  
 
 ---
+## Recommendations
+- Replicate **micro-budget horror/doc** models(Blumhouse-style).
+- Target runtimes around **100-110 minutes**.
+- Use franchises/IP for **revenue scale**, pair with lean originals for ROI.
+- Consider **animation** as a reliable high revenue genre.
+---
 
 ## Data Source
 
@@ -162,6 +168,14 @@ It has been cleaned and structured for educational and analytical purposes in th
 - **Filtered invalid records:** Removed films with zero revenue and excluded entries with invalid or missing genre labels.  
 - **Normalized categorical fields:** Cleaned and standardized genre and production company names to resolve duplicates and inconsistencies (e.g., “Universal Pictures” vs. “Universal”).  
   
+---
+
+## How Metrics Were Calculated
+- **ROI formula:** (Revenue – Budget) ÷ Budget  
+- **Sample size:** ~600 films (1997–2016)  
+- **Top 10 ROI sample:** Used for efficiency analysis; focuses on extremes (survivorship bias acknowledged).  
+- **Revenue leaders:** Ranked by global box office revenue.  
+
 ---
 
 ### SQL Queries
@@ -191,6 +205,8 @@ It has been cleaned and structured for educational and analytical purposes in th
    Consolidates cleaned budget, revenue, ROI, runtime, genre, and production company fields into a single view for use in Power BI dashboards.  
 
 ---
+## Exploratory Data Analysis (EDA)
+These quick visuals show the overall dataset before drilling into Top 10 ROI films.
 
 ## Real-World Role Alignment
 
@@ -218,15 +234,26 @@ This project simulates the type of analysis commonly performed in roles such as:
 
 ## Project Progress and Next Steps
 
-**Completed to date:**
-- Delivered SQL analysis through 7 structured queries plus a consolidated view for reporting.  
-- Built a multi-page Power BI dashboard visualizing ROI patterns by genre, director, studio, and runtime.  
-- Documented data preparation and cleaning steps to ensure analysis reliability.  
+**Completed to date**
+- SQL analysis delivered through 7 structured queries plus a consolidated reporting view.  
+- Multi-page Power BI dashboard built to visualize ROI patterns by genre, director, studio, and runtime.  
+- Data preparation and cleaning steps documented for analysis reliability.  
 
-**Planned improvements:**
-- Publish a LinkedIn post highlighting key findings and linking to this GitHub project to showcase professional impact.  
-- Add calculated fields and measures in DAX to enhance ROI tracking, filtering logic, and scenario analysis.  
-- Expand dataset to include films released through 2025 (and potentially streaming/international box office) for richer comparisons.  
+**Planned improvements**
+- Share findings publicly in a LinkedIn post to demonstrate professional impact.  
+- Add a few new DAX measures to deepen ROI tracking and filtering options.  
+- Refresh the dataset with films released through 2025, including streaming and international box office, for broader comparisons.
+
+---
+## Reflection
+
+ This project helped me practice taking a messy dataset and turning it into a story for a business audience.
+ I strengthened my skills in SQL joins, Power BI modeling, and building multi-page dashboards.  
+I also learned the importance of documenting cleaning steps so others can reproduce the work.  
+While I focused my insights on the Top 10 ROI films for clarity, I also built a full dataset view (~600 films) to validate patterns and avoid relying only on outliers.  
+If I continued this project, I would add regression analysis to measure which variables most strongly predict ROI.  
+Overall, this project gave me confidence in connecting data preparation, analysis, and communication into one complete case study.  
+
 
 ---
 
