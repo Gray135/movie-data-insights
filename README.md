@@ -87,7 +87,7 @@ This dashboard analyzes ROI trends across 600+ films released between 1997–201
 > Highlights low-budget horror’s dominance, with Blumhouse, Oren Peli, and Paranormal Activity leading ROI.
 
 5. ### Revenue & ROI by Release Year & Runtime
-![Revenue & ROI by Release Year & Runtime](images/Revenue_and_ROI_by_Release_Year_and_Runtime.png)  
+![Revenue & ROI by Release Year and Runtime](images/Revenue_ROI_by_Release_Year_and_Runtime.png)  
 > Explores yearly ROI patterns and correlations with average film lengths.
 
 6. ### Revenue & ROI Trends Over Time & Runtime
